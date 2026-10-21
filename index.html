@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Weather Data Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="dashboard" id="weather-card">
+        <header>
+            <h1 id="location-title">Loading Location...</h1>
+            <p id="weather-description">Fetching live data from public API...</p>
+        </header>
+
+        <section class="metrics-grid">
+            <div class="metric-box">
+                <span class="label">Temperature</span>
+                <span id="temp-val" class="value">--°C</span>
+            </div>
+            <div class="metric-box">
+                <span class="label">Wind Speed</span>
+                <span id="wind-val" class="value">-- km/h</span>
+            </div>
+            <div class="metric-box">
+                <span class="label">Condition Code</span>
+                <span id="condition-val" class="value">--</span>
+            </div>
+        </section>
+
+        <footer>
+            <button id="refresh-btn">Refresh Live Data</button>
+            <span id="timestamp">Last updated: Never</span>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
